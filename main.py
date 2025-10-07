@@ -16,14 +16,16 @@ NEGRO = (0, 0, 0)
 
 # Cargar imágenes
 fondo = pygame.image.load("./img/fondo.jpg")
-contenedor_img = pygame.image.load("./img/contenedor.jpg")
-reciclable_img = pygame.image.load("./img/reciclable.webp")
-contaminante_img = pygame.image.load("./img/contaminante.jpg")
+fondo = pygame.transform.scale(fondo, (ANCHO, ALTO))
+
+contenedor_img = pygame.image.load("./img/contenedor.png")
+reciclable_img = pygame.image.load("./img/reciclable.png")
+contaminante_img = pygame.image.load("./img/contaminante.png")
 
 # Escalar imágenes
-contenedor_img = pygame.transform.scale(contenedor_img, (100, 80))
-reciclable_img = pygame.transform.scale(reciclable_img, (50, 50))
-contaminante_img = pygame.transform.scale(contaminante_img, (50, 50))
+contenedor_img = pygame.transform.scale(contenedor_img, (100, 100))
+reciclable_img = pygame.transform.scale(reciclable_img, (150, 150))
+contaminante_img = pygame.transform.scale(contaminante_img, (150, 100))
 
 # Fuente
 fuente = pygame.font.Font(None, 40)
@@ -37,12 +39,12 @@ except:
 # Variables del jugador
 contenedor_x = ANCHO // 2 - 50
 contenedor_y = ALTO - 100
-velocidad = 7
+velocidad = 20
 
 # Variables de los objetos
 obj_x = random.randint(0, ANCHO - 50)
 obj_y = -50
-obj_velocidad = 5
+obj_velocidad = 12
 es_reciclable = True
 
 # Puntuación y vidas
