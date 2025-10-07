@@ -15,10 +15,10 @@ BLANCO = (255, 255, 255)
 NEGRO = (0, 0, 0)
 
 # Cargar imágenes
-fondo = pygame.image.load("fondo.jpg")
-contenedor_img = pygame.image.load("contenedor.png")
-reciclable_img = pygame.image.load("reciclable.png")
-contaminante_img = pygame.image.load("contaminante.png")
+fondo = pygame.image.load("./img/fondo.jpg")
+contenedor_img = pygame.image.load("./img/contenedor.jpg")
+reciclable_img = pygame.image.load("./img/reciclable.webp")
+contaminante_img = pygame.image.load("./img/contaminante.jpg")
 
 # Escalar imágenes
 contenedor_img = pygame.transform.scale(contenedor_img, (100, 80))
