@@ -32,7 +32,7 @@ fuente = pygame.font.Font(None, 40)
 
 # Sonido (opcional)
 try:
-    punto_sonido = pygame.mixer.Sound("punto.wav")
+    punto_sonido = pygame.mixer.Sound("./snd/musica.mp3")
 except:
     punto_sonido = None
 
